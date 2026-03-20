@@ -12,6 +12,7 @@ public class Main {
         double pi = Math.PI;
         double twoPi = 2*pi;
 
+        //sin(100 % 2p)
         x = x%twoPi;
 
         if (x < 0) {
@@ -19,11 +20,13 @@ public class Main {
         }
         int sign=1;
 
+        //sin(x)=−sin(x−p)
         if (x > pi) {
             x = x - pi;
             sign = -1;
         }
 
+        //sin(x)=sin(p−x)
         if (x > pi /2) {
             x = pi - x;
         }
